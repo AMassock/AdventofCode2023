@@ -22,17 +22,6 @@ function markSingleCellGear(i, j, gear, area) {
   }
 }
 
-// | a | b | c |
-// | d |   | e |
-// | f | g | h |
-// a = (i - 1, j - 1)
-// b = (i, j - 1)
-// c = (i + 1, j - 1)
-// d = (i - 1, j)
-// e = (i + 1, j)
-// f = (i - 1, j + 1)
-// g = (i, j + 1)
-// h = (i + 1, j + 1)
 function markAllAdjacentCellsPartNumber(i, j, area) {
   markSingleCellPartNumber(i - 1, j - 1, area); // a
   markSingleCellPartNumber(i, j - 1, area); // b
